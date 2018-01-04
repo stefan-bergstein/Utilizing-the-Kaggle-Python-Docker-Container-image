@@ -2,6 +2,13 @@
 
 Getting started with data science and applying machine learning was never as simple as now. Many free and paid online tutorials and courses help you to get started. I’ve recently started to learn, play and work on Data Science & Machine Learning on Kaggle.com. In this brief post, I’d like to share my experience with the Kaggle Python Docker image, which simplifies the Data Scientist’s life ….
 
+**Outline**
+* Why did I start to use containers for Data Science & Machine Learning with Python?
+* How did I start?
+* Experiment with Kaggle notebooks in your local sandbox
+* Alternatives
+* References
+
 ### Why did I start to use containers for Data Science & Machine Learning with Python?
 
 The short answer is simple: I had to push long-running and compute intense machine learning jobs from my laptop computer to an old, but powerful desktop workstation. 
@@ -150,6 +157,13 @@ The notebook opens in a new browser tab and from here you can run, modify, try-o
 
 Sure …
 
+1. Kaggle.com makes it easy to fork kernels (notebooks, scripts) online. In case you don't see any need to develop in your private environment,  Kaggle.com is a good place for practicing data science.
+1. Amazon Web Services offers [AWS Deep Learning AMIs](https://aws.amazon.com/de/machine-learning/amis/) with a lot of pre-installed software. 
+1. Nothing beats your personalized dev/test environment
 
 ## References
+* [Kaggle Python docker image](https://github.com/Kaggle/docker-python)
 
+* [How to get started with data science in containers](http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/)
+
+* [Setup a data science workflow with kaggle python docker image on laptop](http://mathalope.co.uk/2017/08/02/how-to-setup-a-data-science-workflow-with-kaggle-python-docker-image-on-laptop/)
