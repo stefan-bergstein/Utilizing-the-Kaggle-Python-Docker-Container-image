@@ -120,6 +120,12 @@ The structure should look like this:
 ### Download a notebook
 Next, download the notebook that you like to try out. I am illustrating this with my one of my public Kaggle notebooks.
 
+On kaggle.com, navigate to the notebook and code tab, then download the `.ipynb` file on your local computer.
+![download code](/images/download-code-notebook.jpg)
+
+After that, upload the notebook into the `code` directory of your local environment. Navivate to the `code` directory and `Upload` the notebook (.ipynb) file. Your result should look like this:
+![try out notebook](/images/try-out-notebook.jpg)
+
 
 ### Download the input data
 
