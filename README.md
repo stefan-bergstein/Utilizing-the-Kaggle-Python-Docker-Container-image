@@ -138,9 +138,13 @@ Next, upload the input data into the `input` directory of your local environment
 
 ![input data](/images/input-data.jpg)
 
-
-
 ### Run the notebook
+Now it is time to run the notebook in your local Kaggle environment. Navivate to the code directory and open the notebook.
+![open-notebook.jpg](/images/open-notebook.jpg)
+
+The notebook opens in a new browser tab and from here you can run, modify, try-out anything ...
+
+![run-notebook.jpg](/images/run-notebook.jpg)
 
 ## Any alternatives? 
 
