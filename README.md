@@ -1,4 +1,4 @@
-# Accelerate Data Science with Containers 
+![Accelerate Data Science with Containers](/images/header1.jpg)
 
 Getting started with data science and applying machine learning was never as simple as now. Many free and paid online tutorials and courses help you to get started. I’ve recently started to learn, play and work on Data Science & Machine Learning on Kaggle.com. In this brief post, I’d like to share my experience with the Kaggle Python Docker image, which simplifies the Data Scientist’s life ….
 
@@ -85,7 +85,7 @@ http://mylinuxbox:8888/?token=2c997056b24406afdfd7e0e1d10861989656e1ef5e22e812
 
 Here we go, a fresh Jupyter Notebook ...
 
-![Fresh Jupyter Notebook](/images/empty-notebook.jpg)
+https://www.kaggle.com/stefanbergstein/keras-deep-learning-on-titanic-data
 
 ## Experiment with Kaggle notebooks in your local sandbox
 
