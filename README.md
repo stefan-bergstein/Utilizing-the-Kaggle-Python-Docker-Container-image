@@ -125,9 +125,9 @@ The structure should look like this:
 
 
 ### Download a notebook
-Next, download the notebook that you like to try out. I am illustrating this with my one of my public Kaggle notebooks.
+Next, download the notebook that you like to try out. I am illustrating this with my one of my [public Kaggle notebooks](https://www.kaggle.com/stefanbergstein).
 
-On kaggle.com, navigate to the notebook and code tab, then download the `.ipynb` file on your local computer.
+On kaggle.com, navigate to the [notebook and code tab](https://www.kaggle.com/stefanbergstein/keras-deep-learning-on-titanic-data), then download the `.ipynb` file on your local computer.
 ![download code](/images/download-code-notebook.jpg)
 
 After that, upload the notebook into the `code` directory of your local environment. Navivate to the `code` directory and `Upload` the notebook (.ipynb) file. Your result should look like this:
