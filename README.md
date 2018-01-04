@@ -76,4 +76,5 @@ http://mylinuxbox:8888/?token=2c997056b24406afdfd7e0e1d10861989656e1ef5e22e812
 ```
 
 
+![Fresh Jupyter Notebook](/images/empty-notebook.jpg)
 
