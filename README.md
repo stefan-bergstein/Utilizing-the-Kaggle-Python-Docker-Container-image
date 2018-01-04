@@ -10,7 +10,7 @@ Setting up a 2nd Python development and test machine many isn’t that hard, but
 
 * The image contains the same software libraries as the Kaggle online runtime environment. This would allow me to play and develop in a local, private environment and upload only significant changes to the online version of my Kaggle notebooks and code.
 * As a Newbie Kaggler, you might want to learn from, modify and try out the solutions of advanced users without forking too many scripts and notebooks. Downloading scripts and notebooks and running them in your own environment offers you a lot of freedom and flexibility.
-* Using the Kaggle Python Docker image made it very simple to create a minimal, shared Jupyter Notebook environment for a side project with a co-worker.
+* Using the Kaggle Python Docker image made it very simple for me to create a minimal, shared Jupyter Notebook environment for a side project with a co-worker.
 
 ### How did I start?
 My desktop workstation with Ubuntu 16.04 had already a reasonable Docker version (17.05.0-ce) installed and there I just had to pull the Kaggle Python Docker image. For any details for the Docker installation see [this blog post](http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/) or https://docs.docker.com.
