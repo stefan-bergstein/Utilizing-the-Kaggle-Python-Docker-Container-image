@@ -112,7 +112,7 @@ working dir:
 ```
 
 You can either create the directories on the Linux system manually or via the Jupyter web UI:
-
+![directory structure](/images/dirs-notebook.jpg)
 
 
 
