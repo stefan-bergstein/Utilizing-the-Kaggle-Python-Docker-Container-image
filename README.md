@@ -1,0 +1,2 @@
+# Utilizing-the-Kaggle-Python-Docker-Container-image
+Getting started with data science and applying machine learning was never as simple as now. Many free and paid online tutorials and courses help you to get started. I’ve recently started to learn, play and work on Data Science &amp; Machine Learning on Kaggle.com. In this brief post I’d like to share my experience with the Kaggle Python Docker image, which simplifies the Data Scientist’s life ….
