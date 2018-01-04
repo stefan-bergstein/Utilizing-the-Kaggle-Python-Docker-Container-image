@@ -111,12 +111,15 @@ working dir:
    - test.csv
 ```
 
-You can either create the directories on the Linux system manually or via the Jupyter web UI:
+You can either create the directories on the Linux system manually or via the Jupyter web UI. 
+
+The structure should look like this:
 ![directory structure](/images/dirs-notebook.jpg)
 
 
-
 ### Download a notebook
+Next, download the notebook that you like to try out. I am illustrating this with my one of my public Kaggle notebooks.
+
 
 ### Download the input data
 
