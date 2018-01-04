@@ -2,12 +2,12 @@
 
 Getting started with data science and applying machine learning was never as simple as now. Many free and paid online tutorials and courses help you to get started. I’ve recently started to learn, play and work on Data Science & Machine Learning on Kaggle.com. In this brief post, I’d like to share my experience with the Kaggle Python Docker image, which simplifies the Data Scientist’s life ….
 
-**Outline**
-* Why did I start to use containers for Data Science & Machine Learning with Python?
-* How did I start?
-* Experiment with Kaggle notebooks in your local sandbox
-* Alternatives
-* References
+**Outline:**
+* [Why did I start to use containers for Data Science & Machine Learning with Python?](#why-did-i-start-to-use-containers-for-data-science--machine-learning-with-python)
+* [How did I start?](#how-did-i-start)
+* [Experiment with Kaggle notebooks in your local sandbox](#experiment-with-kaggle-notebooks-in-your-local-sandbox)
+* [Alternatives](#any-alternatives)
+* [References](#references)
 
 ### Why did I start to use containers for Data Science & Machine Learning with Python?
 
