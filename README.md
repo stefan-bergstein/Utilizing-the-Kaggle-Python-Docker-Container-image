@@ -75,6 +75,7 @@ I am connecting from the browser on my laptop computer to the desktop workstatio
 http://mylinuxbox:8888/?token=2c997056b24406afdfd7e0e1d10861989656e1ef5e22e812
 ```
 
+Here we go, a fresh Jupyter Notebook ...
 
 ![Fresh Jupyter Notebook](/images/empty-notebook.jpg)
 
