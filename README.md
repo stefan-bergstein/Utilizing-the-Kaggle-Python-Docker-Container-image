@@ -25,4 +25,55 @@ $ docker image ls kaggle/python
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 kaggle/python       latest              09a349977ca7        2 weeks ago         12.5GB
 ```
-Let’s do a quick check before starting a Docker Jupyter Notebook environment:
+
+**Let’s do a quick check before starting a Docker Jupyter Notebook environment:**
+
+As already described on [Kaggle.com](http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/), it is helpful to create a shell function and add the function also to your `.bash_profile`:
+
+`$ kpython(){ docker run -v $PWD:/tmp/working -w=/tmp/working --rm -it kaggle/python python "$@" ; }`
+ 
+Now we can use `kpython` instead of `python` and print, for example, the python and Keras version of the Docker image:
+```
+$ kpython -c 'import sys; print("Python version ", sys.version); import keras; print("Keras version ", keras.__version__)'
+
+Python version  3.6.3 |Anaconda custom (64-bit)| (default, Nov 20 2017, 20:41:42)
+[GCC 7.2.0]
+Using TensorFlow backend.
+Keras version  2.1.2
+```
+
+**So, a Jupyter Notebook environment can be started with the following docker run command:**
+First, create a working direxctor on the workstation for yout notebooks and files. Then start the container.
+```
+$ mkdir kaggle && cd kaggle
+$ docker run -v $PWD:/tmp/working -w=/tmp/working -p 8888:8888 --rm -it kaggle/python jupyter notebook --no-browser --ip="0.0.0.0" --notebook-dir=/tmp/working --allow-root
+```
+Watch for the output with the token:
+```
+[C 16:36:23.778 NotebookApp]
+    Copy/paste this URL into your browser when you connect for the first time, to login with a token:
+        http://0.0.0.0:8888/?token=7b337f55206514624014efe0e84c94c8ad768c94587d700b
+```
+
+Since I want to run a Jupyter Notebook service, I usually start the container as detached (-d) instead in foreground mode (-it):
+```
+
+$ docker run -v $PWD:/tmp/working -w=/tmp/working -p 8888:8888 --rm -d kaggle/python jupyter notebook --no-browser --ip="0.0.0.0" --notebook-dir=/tmp/working --allow-root
+```
+
+You can display the logs of the running container to see the tocken:
+```
+$ docker ps
+CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS                    NAMES
+158fec0f6eaa        kaggle/python               "/usr/bin/tini -- ..."   2 weeks ago         Up 2 weeks          0.0.0.0:8888->8888/tcp   angry_perlman
+$ docker logs 158fec0f6eaa
+
+[I 21:04:14.464 NotebookApp] The Jupyter Notebook is running at: http://0.0.0.0:8888/?token=7b337f55206514624014efe0e84c94c8ad768c94587d700b
+```
+I am connecting from the browser on my laptop computer to the desktop workstation where the Kaggle container is running. Therefore I replace 0.0.0.0 with the IP address or FQDN of the workstation.
+```
+http://mylinuxbox:8888/?token=2c997056b24406afdfd7e0e1d10861989656e1ef5e22e812
+```
+
+
+
