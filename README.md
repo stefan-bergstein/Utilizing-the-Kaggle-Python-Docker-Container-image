@@ -124,10 +124,21 @@ On kaggle.com, navigate to the notebook and code tab, then download the `.ipynb`
 ![download code](/images/download-code-notebook.jpg)
 
 After that, upload the notebook into the `code` directory of your local environment. Navivate to the `code` directory and `Upload` the notebook (.ipynb) file. Your result should look like this:
+
 ![try out notebook](/images/try-out-notebook.jpg)
 
 
 ### Download the input data
+
+Well ... the notebook needs some input data. On kaggle.com, navigate to the notebook and data tab, then download the `train.csv` and `test.csv` files on your local computer.
+
+![download data](/images/download-data-notebook.jpg)
+
+Next, upload the input data into the `input` directory of your local environment. The result should look like this:
+
+![input data](/images/input-data.jpg)
+
+
 
 ### Run the notebook
 
