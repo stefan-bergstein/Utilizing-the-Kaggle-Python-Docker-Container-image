@@ -43,7 +43,8 @@ Keras version  2.1.2
 ```
 
 **So, a Jupyter Notebook environment can be started with the following docker run command:**
-First, create a working direxctor on the workstation for yout notebooks and files. Then start the container.
+
+First, create a working directory on the workstation for your notebooks and files. Then start the container.
 ```
 $ mkdir kaggle && cd kaggle
 $ docker run -v $PWD:/tmp/working -w=/tmp/working -p 8888:8888 --rm -it kaggle/python jupyter notebook --no-browser --ip="0.0.0.0" --notebook-dir=/tmp/working --allow-root
@@ -78,4 +79,53 @@ http://mylinuxbox:8888/?token=2c997056b24406afdfd7e0e1d10861989656e1ef5e22e812
 Here we go, a fresh Jupyter Notebook ...
 
 ![Fresh Jupyter Notebook](/images/empty-notebook.jpg)
+
+## Experiment with Kaggle notebooks in your local sandbox
+
+In this section I’d like to show how you can download Kaggle notebooks and play with a note in your own local environment. 
+
+> Note, please join the Kaggle community and don’t go private only. 
+> Share your work, questions and experience with other users.
+
+**Overview**
+1. Create a directory structure
+1. Download a notebook
+1. Download the input data
+1. Run the notebook
+
+
+### Create a directory structure
+
+Kaggle notebooks usually read input data file form the directory `../input/`. 
+
+E.g. `../input/train.csv` and `../input/test.csv`.
+
+A similar directory structure is required on your local system so that notebooks run without any modification:
+
+```
+working dir:
+ - code
+   - notebook.ipynb
+ - input
+   - train.csv
+   - test.csv
+```
+
+You can either create the directories on the Linux system manually or via the Jupyter web UI:
+
+
+
+
+### Download a notebook
+
+### Download the input data
+
+### Run the notebook
+
+## Any alternatives? 
+
+Sure …
+
+
+## References
 
