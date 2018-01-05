@@ -69,7 +69,7 @@ Since I want to run a Jupyter Notebook service, I usually start the container as
 $ docker run -v $PWD:/tmp/working -w=/tmp/working -p 8888:8888 --rm -d kaggle/python jupyter notebook --no-browser --ip="0.0.0.0" --notebook-dir=/tmp/working --allow-root
 ```
 
-You can display the logs of the running container to see the tocken:
+You can display the logs of the running container to see the token:
 ```
 $ docker ps
 CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS                    NAMES
@@ -84,8 +84,8 @@ http://mylinuxbox:8888/?token=2c997056b24406afdfd7e0e1d10861989656e1ef5e22e812
 ```
 
 Here we go, a fresh Jupyter Notebook ...
+![Fresh Jupyter Notebook](/images/empty-notebook.jpg)
 
-https://www.kaggle.com/stefanbergstein/keras-deep-learning-on-titanic-data
 
 ## Experiment with Kaggle notebooks in your local sandbox
 
