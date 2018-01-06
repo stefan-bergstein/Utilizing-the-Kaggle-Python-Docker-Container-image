@@ -158,8 +158,9 @@ The notebook opens in a new browser tab and from here you can run, modify, try-o
 Sure …
 
 1. Kaggle.com makes it easy to fork kernels (notebooks, scripts) online. In case you don't see any need to develop in your private environment,  Kaggle.com is a good place for practicing data science.
-1. Amazon Web Services offers [AWS Deep Learning AMIs](https://aws.amazon.com/de/machine-learning/amis/) with a lot of pre-installed software. 
-1. Nothing beats your personalized dev/test environment
+1. Amazon Web Services offers [AWS Deep Learning AMIs](https://aws.amazon.com/de/machine-learning/amis/) with a lot of pre-installed software.
+1. [Running and securing a solid notebook server.](http://jupyter-notebook.readthedocs.io/en/stable/public_server.html#) 
+1. Nothing beats your personalized development and test environment that you constructed over years.
 
 ## References
 * [Kaggle Python docker image](https://github.com/Kaggle/docker-python)
