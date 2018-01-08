@@ -36,13 +36,14 @@ kaggle/python       latest              09a349977ca7        2 weeks ago         
 **Let’s do a quick check before starting a Docker Jupyter Notebook environment:**
 
 As already described on [Kaggle.com](http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/), it is helpful to create a shell function and add the function also to your `.bash_profile`:
-
-`$ kpython(){ docker run -v $PWD:/tmp/working \
-    -w=/tmp/working --rm -it kaggle/python python "$@" ; }`
- 
+```
+$ kpython(){ docker run -v $PWD:/tmp/working \
+    -w=/tmp/working --rm -it kaggle/python python "$@" ; }
+``` 
 Now we can use `kpython` instead of `python`. For example, to print the Python and Keras version of the Docker image:
 ```
-$ kpython -c 'import sys; print("Python version ", sys.version); import keras; print("Keras version ", keras.__version__)'
+$ kpython -c 'import sys; print("Python version ", sys.version); \
+          import keras; print("Keras version ", keras.__version__)'
 
 Python version  3.6.3 |Anaconda custom (64-bit)| (default, Nov 20 2017, 20:41:42)
 [GCC 7.2.0]
@@ -55,26 +56,31 @@ Keras version  2.1.2
 First, create a working directory on the workstation for your notebooks and files. Then, start the container.
 ```
 $ mkdir kaggle && cd kaggle
-$ docker run -v $PWD:/tmp/working -w=/tmp/working -p 8888:8888 --rm -it kaggle/python jupyter notebook --no-browser --ip="0.0.0.0" --notebook-dir=/tmp/working --allow-root
+$ docker run -v $PWD:/tmp/working -w=/tmp/working -p 8888:8888 \
+     --rm -it kaggle/python jupyter notebook --no-browser \
+     --ip="0.0.0.0" --notebook-dir=/tmp/working --allow-root
 ```
 Watch for the output with the token:
 ```
 [C 16:36:23.778 NotebookApp]
-    Copy/paste this URL into your browser when you connect for the first time, to login with a token:
+    Copy/paste this URL into your browser when you connect for the first time, 
+    to login with a token:
         http://0.0.0.0:8888/?token=2c997056b24406afdfd7e0e1d10861999656e1ef5e22e812
 ```
 
 Since I want to run a Jupyter Notebook service, I usually start the container as detached (-d) instead of in foreground mode (-it):
 ```
 
-$ docker run -v $PWD:/tmp/working -w=/tmp/working -p 8888:8888 --rm -d kaggle/python jupyter notebook --no-browser --ip="0.0.0.0" --notebook-dir=/tmp/working --allow-root
+$ docker run -v $PWD:/tmp/working -w=/tmp/working -p 8888:8888 
+     --rm -d kaggle/python jupyter notebook --no-browser \
+     --ip="0.0.0.0" --notebook-dir=/tmp/working --allow-root
 ```
 
 You can display the logs of the running container to see the token:
 ```
 $ docker ps
-CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS                    NAMES
-158fec0f6eaa        kaggle/python               "/usr/bin/tini -- ..."   2 weeks ago         Up 2 weeks          0.0.0.0:8888->8888/tcp   angry_perlman
+CONTAINER ID        IMAGE                       COMMAND                   
+158fec0f6eaa        kaggle/python               "/usr/bin/tini -- ..."   
 
 $ docker logs 158fec0f6eaa
 
