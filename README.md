@@ -60,7 +60,7 @@ Watch for the output with the token:
 ```
 [C 16:36:23.778 NotebookApp]
     Copy/paste this URL into your browser when you connect for the first time, to login with a token:
-        http://0.0.0.0:8888/?token=7b337f55206514624014efe0e84c94c8ad768c94587d700b
+        http://0.0.0.0:8888/?token=2c997056b24406afdfd7e0e1d10861999656e1ef5e22e812
 ```
 
 Since I want to run a Jupyter Notebook service, I usually start the container as detached (-d) instead of in foreground mode (-it):
@@ -74,13 +74,14 @@ You can display the logs of the running container to see the token:
 $ docker ps
 CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS                    NAMES
 158fec0f6eaa        kaggle/python               "/usr/bin/tini -- ..."   2 weeks ago         Up 2 weeks          0.0.0.0:8888->8888/tcp   angry_perlman
+
 $ docker logs 158fec0f6eaa
 
-[I 21:04:14.464 NotebookApp] The Jupyter Notebook is running at: http://0.0.0.0:8888/?token=7b337f55206514624014efe0e84c94c8cd768c94587d700b
+[I 21:04:14.464 NotebookApp] The Jupyter Notebook is running at: http://0.0.0.0:8888/?token=2c997056b24406afdfd7e0e1d10861999656e1ef5e22e812
 ```
 I am connecting from the browser on my laptop computer to the desktop workstation where the Kaggle container is running. Therefore, I will replace 0.0.0.0 with the IP address or FQDN of the workstation.
 ```
-http://mylinuxbox:8888/?token=2c997056b24406afdfd7e0e1d10861989656e1ef5e22e812
+http://mylinuxbox:8888/?token=2c997056b24406afdfd7e0e1d10861999656e1ef5e22e812
 ```
 
 Here we go, a fresh Jupyter Notebook ...
