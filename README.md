@@ -83,8 +83,8 @@ CONTAINER ID        IMAGE                       COMMAND
 158fec0f6eaa        kaggle/python               "/usr/bin/tini -- ..."   
 
 $ docker logs 158fec0f6eaa
-
-[I 21:04:14.464 NotebookApp] The Jupyter Notebook is running at: http://0.0.0.0:8888/?token=2c997056b24406afdfd7e0e1d10861999656e1ef5e22e812
+[I 21:04:14.464 NotebookApp] The Jupyter Notebook is running at:
+http://0.0.0.0:8888/?token=2c997056b24406afdfd7e0e1d10861999656e1ef5e22e812
 ```
 I am connecting from the browser on my laptop computer to the desktop workstation where the Kaggle container is running. Therefore, I will replace 0.0.0.0 with the IP address or FQDN of the workstation.
 ```
