@@ -37,7 +37,8 @@ kaggle/python       latest              09a349977ca7        2 weeks ago         
 
 As already described on [Kaggle.com](http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/), it is helpful to create a shell function and add the function also to your `.bash_profile`:
 
-`$ kpython(){ docker run -v $PWD:/tmp/working -w=/tmp/working --rm -it kaggle/python python "$@" ; }`
+`$ kpython(){ docker run -v $PWD:/tmp/working \
+    -w=/tmp/working --rm -it kaggle/python python "$@" ; }`
  
 Now we can use `kpython` instead of `python`. For example, to print the Python and Keras version of the Docker image:
 ```
